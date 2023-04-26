@@ -1,0 +1,156 @@
+@import "~@/assets/global.less";
+.banner-container {
+  height: 660px;
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+  }
+  .text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    .title{
+      font-size: 56px;
+      font-weight: bold;
+      color:#fff;
+    }
+    .entitle{
+      font-size: 27px;
+      color:#fff;
+    }
+  }
+}
+.solution-container {
+  background-color: #f3f6fb;
+  background-image: url(/public/images/solution/solution-img.png);
+  padding-top: 80px;
+  padding-bottom: 128px;
+  overflow: hidden;
+  position: relative;
+  .solution-list {
+    max-width: 1200px;
+    .solution-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 372px;
+      margin-bottom: 60px;
+      .img {
+        width: 550px;
+        height: 372px;
+        position: relative;
+        &::after {
+          content: "";
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          border: 1px solid @mainColor;
+          z-index: 0;
+        }
+        img {
+          position: absolute;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .text {
+        flex: 1;
+        padding-left: 100px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 372px;
+
+        .title {
+          font-size: 36px;
+          font-weight: bold;
+          color: @black1;
+          margin-bottom: 30px;
+        }
+        .cont {
+          font-size: 16px;
+          color: @black1;
+          p {
+            padding-left: 28px;
+            margin-bottom: 5px;
+            position: relative;
+            &::after {
+              content: "";
+              position: absolute;
+              width: 16px;
+              height: 16px;
+              background-image: url(/public/images/solution/check-one.svg);
+              top: 12px;
+              left: 0;
+              transform: translateY(-50%);
+            }
+          }
+        }
+      }
+      &:nth-child(2n + 1) {
+        background-image: linear-gradient(90deg, #a8def4, transparent);
+      }
+      &:nth-child(2n + 2) {
+        .img {
+          order: 2;
+          &::after {
+            top: 10px;
+            left: -10px;
+          }
+        }
+        .text {
+          order: 1;
+          padding-right: 100px;
+          padding-left: 0;
+          text-align: right;
+          .cont {
+            p {
+              padding-left: 0;
+              padding-right: 28px;
+              &::after {
+                left: auto;
+                right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .bg1 {
+    position: absolute;
+    display: block;
+    width: 812px;
+    height: 812px;
+    top: 80px;
+    right: 10%;
+    transform: translateX(100%);
+    background-color: #ebf3f2;
+    border-radius: 50%;
+  }
+  .bg2 {
+    position: absolute;
+    display: block;
+    width: 890px;
+    height: 890px;
+    left: 0;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    top: 771px;
+    background: #ebf4ff;
+  }
+}
+
+@import "./1080.less" screen and (max-width:1080px);
+@import "./768.less" screen and (max-width:768px);

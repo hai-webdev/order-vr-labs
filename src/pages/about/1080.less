@@ -1,0 +1,52 @@
+.about-container {
+  .left-layout {
+    width: 300px;
+  }
+  .right-layout {
+    width: calc(100% - 300px);
+    .text {
+      width: calc(100% - 120px);
+      padding: 0 20px;
+      .cont-list {
+        .cont-item {
+          margin-bottom: 20px;
+          .title {
+            font-size: 16px;
+            margin-bottom: 10px;
+          }
+          .desc {
+            font-size: 12px;
+            line-height: 1.6;
+            p {
+              margin-bottom: 5px;
+            }
+          }
+          .message {
+            height: 48px;
+            width: 200px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .img {
+      width: 120px;
+    }
+    .animate-text {
+      position: absolute;
+      top: 0;
+      left: 100px;
+      transform: translateX(0);
+      display: flex;
+      .img1 {
+        margin-right: 10px;
+        height: 40px;
+      }
+      .img2 {
+        position: relative;
+        top: 10px;
+        height: 40px;
+      }
+    }
+  }
+}

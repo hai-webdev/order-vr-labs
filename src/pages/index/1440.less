@@ -1,0 +1,111 @@
+.about-container {
+  height: 450px;
+  .left-layout {
+    .title-box {
+      width: 80%;
+      height: 120px;
+      padding: 20px;
+      .en-title {
+        font-size: 24px;
+        top: 20px;
+        left: auto;
+      }
+      .title {
+        font-size: 28px;
+        top: 50px;
+        left: auto;
+      }
+    }
+  }
+  .about-box {
+    padding-top: 100px;
+  }
+}
+.ip-container {
+  height: 900px;
+  position: relative;
+  padding-top: 30px;
+  box-sizing: border-box;
+  .imgs {
+    img {
+      position: absolute;
+    }
+    .star1 {
+      right: calc(586% / 19.2);
+      bottom: calc(460% / 11.7);
+      animation: star1 linear infinite;
+      animation-delay: 1ms;
+      animation-duration: 4500ms;
+      width: 180px;
+    }
+    .star2 {
+      right: calc(129% / 19.2);
+      bottom: calc(440% / 11.7);
+      animation: star2 linear infinite;
+      animation-delay: 1ms;
+      animation-duration: 4500ms;
+      width: 100px;
+    }
+    .people1 {
+      left: calc(145% / 19.2);
+      bottom: calc(200% / 11.7);
+      animation: people1 linear infinite;
+      animation-delay: 1ms;
+      animation-duration: 4500ms;
+      width: 350px;
+    }
+    .people2 {
+      right: calc(250% / 19.2);
+      bottom: calc(180% / 11.7);
+      animation: people2 linear infinite;
+      animation-delay: 1ms;
+      animation-duration: 4500ms;
+      width: 350px;
+    }
+  }
+}
+.technology-container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  .technology-box {
+    .technology-list {
+      .technology-item {
+        width: calc(66% / 5);
+        height: 500px;
+        .technology-cont {
+          padding-top: 25px;
+          padding-bottom: 50px;
+          .num {
+            font-size: 70px;
+          }
+          .bottom {
+            .title {
+              font-size: 17px;
+              padding-bottom: 15px;
+              margin-bottom: 15px;
+            }
+            .desc {
+              font-size: 15px;
+            }
+          }
+        }
+        &.on {
+          width: 34%;
+          position: relative;
+          .img {
+            &::after {
+              display: none;
+            }
+          }
+          .technology-cont {
+            .bottom {
+              .title {
+                font-size: 24px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

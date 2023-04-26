@@ -1,0 +1,17 @@
+module.exports = {
+  index: {
+    js: "./src/pages/index", 
+    html: "./src/pages/index/index.html", 
+    out: "index.html", 
+  },
+  solution: {
+    js: "./src/pages/solution", 
+    html: "./src/pages/solution/index.html", 
+    out: "solution.html", 
+  },
+  about: {
+    js: "./src/pages/about", 
+    html: "./src/pages/about/index.html", 
+    out: "about.html", 
+  },
+};

@@ -1,0 +1,56 @@
+@mainColor: #00a4fb;
+@black1: #0d1b36;
+@black2: #565c66;
+img {
+  max-width: 100%;
+}
+
+.max-center {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.flex(@justify-content:center;@align-items:center;) {
+  display: flex;
+  justify-content: @justify-content;
+  align-items: @align-items;
+}
+
+.banner-container {
+  position: relative;
+  .cursor {
+    cursor: pointer;
+    position: absolute;
+    box-sizing: border-box;
+    z-index: 99;
+    bottom: 85px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 22px;
+    height: 38px;
+    border-radius: 29px;
+    border: 2px solid #fff;
+    i {
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      background-color: #fff;
+      border-radius: 50%;
+      top: 5px;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: up-down 1s infinite linear;
+    }
+  }
+}
+
+@keyframes up-down {
+  0% {
+    top: 5px;
+    opacity: 1;
+  }
+  100% {
+    top: 25px;
+    opacity: 0;
+  }
+}

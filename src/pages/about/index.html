@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 引入公共页头 -->
+  <%= require("html-loader!../common/header/index.html") %>
+    <section class="about-container">
+      <div class="left-layout">
+        <img src="/public/images/about/left.png" alt="">
+      </div>
+      <div class="right-layout">
+        <div class="animate-text">
+          <img src="/public/images/about/vr.png" alt="vr" class="img1 wow fadeInLeft">
+          <img src="/public/images/about/labs.png" alt="Labs" class="img2 wow fadeInUp">
+        </div>
+        <div class="text">
+          <ul class="cont-list">
+            <li class="cont-item">
+              <div class="title">扬骏科技 • 元境空间</div>
+              <div class="desc">
+                <p>成立于2017年。</p>
+                <p>深圳高新技术企业，拥有20多项国家专利，致力于虚拟现实技术的研发、沉浸互动新营销解决方案和应用落地，主要有4大业务范畴：元宇宙展厅、全景拍摄、虚拟仿真、产品建模。</p>
+                <p>为政府党建、新农村振兴、高校招培、数字文旅、企业云展厅、线上展会等单位和项目，提供虚拟仿真训练、沉浸交互、即时触达等元宇宙智能落地服务。</p>
+              </div>
+            </li>
+            <li class="cont-item">
+              <div class="title">元境空间核心使命</div>
+              <div class="desc">
+                <p>聚焦用户体验</p>
+                <p>为客户创造价值</p>
+              </div>
+              <div class="message">创新塑造了我们的DNA。</div>
+            </li>
+          </ul>
+        </div>
+        <div class="img">
+          <img src="/public/images/about/right.png" alt="">
+        </div>
+      </div>
+    </section>
+    <!-- 引入公共页尾 -->
+    <%= require("html-loader!../common/footer/index.html") %>
+</body>
+
+</html>
